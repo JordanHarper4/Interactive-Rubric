@@ -1,0 +1,119 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<title>Interactive Rubric</title>
+	</head>
+	<body>
+		<table border="10px">
+	 <thead>
+	 <tr>
+	 <th></th>
+	 <th>3</th>
+	 <th>2</th>
+	 <th>1</th>
+	 <th>0</th>
+	 </tr>
+	 <tbody>
+	 <tr>
+	 <td><b><u>Author:</u></b>
+		 What are the author's credentials and affiliation? Is the author an expert?
+	 <td><input type="button" value="" onClick="document.calculator.ans.value='3'">The author's credentials indicate that he/she is an expert on this topic. The author gives contact info or professional affiliation.
+	 <td><input type="button" value="" onClick="document.calculator.ans.value='2'">The author is named but credentials and/or contact info (online sources) is incomplete.
+	 <td><input type="button" value="" onClick="document.calculator.ans.value='1'">The author is unnamed and/or no credentials are given.
+	 <td><input type="button" oonClick="document.calculator.ans.value='0'">The author is named, but is clearly not an expert on the topic (published by student or fans).
+	 </tr>
+
+	 <tr>
+	 <td><b><u>Publisher:</u></b>
+Is the source published by a reputable publisher or organization?
+	 <td><input type="button" value="" onClick="document.calculator.ans.value='3'">Published by:
+<ul>
+<li>U.S. Government (.gov)</li>
+<li>Scholarly Journal</li>
+or in a Reference or academic book
+</ul>
+	 <td><input type="button" value="" onClick="document.calculator.ans.value='2'">Published by a <b>known</b>:
+<ul>
+<li>Organization</li>
+<li>University</li>
+<li>Business</li>
+<li>Magazine or Newspaper</li>
+or in a print book
+</ul>
+	 <td><input type="button" value="" onClick="document.calculator.ans.value='1'">Published by:
+<ul>
+<li>A K-12 School</li>
+<li>An Unknown Business(.com)</li>
+<li>An Unknown Organization (.org)</li>
+<ul>
+	 <td><input type="button" oonClick="document.calculator.ans.value='0'">Self-published:
+	Blogs, Personal web pages, etc.
+	Look for the symbols ~% or the words "users" "members" etc. in the URL
+	 </tr>
+
+	 <tr>
+	 <td><b><u>Sources Cited:</u></b>
+Is the information cited?
+	 <td><input type="button" value="" onClick="document.calculator.ans.value='3'">The work is original research/info by a reputable source.  There is a Works Cited list and/or a Bibliography.
+	 <td><input type="button" value="" onClick="document.calculator.ans.value='2'">The work is a compilation of research/info by a reputable source. No Works Cited information as a list.
+	 <td><input type="button" value="" onClick="document.calculator.ans.value='1'">There is a statement about the source of information embedded in the source, but no Works Cited list.
+	 <td><input type="button" oonClick="document.calculator.ans.value='0'">No indication of where the information came from.
+	 </tr>
+
+	 <tr>
+	 <td><b><u>Purpose:</u></b>
+Why was this information published?
+	 <td><input type="button" value="" onClick="document.calculator.ans.value='3'">To promote scholarly research.
+	 <td><input type="button" value="" onClick="document.calculator.ans.value='2'">To provide factual information. Some opinion may be included.
+	 <td><input type="button" value="" onClick="document.calculator.ans.value='1'">To sell something, to persuade, or to promote an idea.
+	 <td><input type="button" oonClick="document.calculator.ans.value='0'">For personal or entertainment purposes.
+	 </tr>
+
+	 <tr>
+	 <td><b><u>Date:</u></b>
+How current is the information?
+	 <td><input type="button" value="" onClick="document.calculator.ans.value='3'">Online:
+The info is less than 1 year old.
+<div>
+Print:
+The info is less than 3 years old.
+	 <td><input type="button" value="" onClick="document.calculator.ans.value='2'">Online:
+The info is less than 3 years old.
+<div>
+Print:
+The information is more than 3 years old, but is not necessarily out of date.
+	 <td><input type="button" value="" onClick="document.calculator.ans.value='1'">The information is more than five years old.
+	 <td><input type="button" oonClick="document.calculator.ans.value='0'">There is no indication of when the information was published.
+	 </tr>
+
+	 <tr>
+	 <td><b><u>Substance:</u></b>
+	 <td><input type="button" value="" onClick="document.calculator.ans.value='3'">Depth of coverage needed for your purpose and written at a college or professional level.
+	 <td><input type="button" value="" onClick="document.calculator.ans.value='2'">Written for the general public.
+	 <td><input type="button" value="" onClick="document.calculator.ans.value='1'">Lacking the depth needed for your purpose.
+	 <td><input type="button" oonClick="document.calculator.ans.value='0'">No depth, contains excessive colloquialisms, slang, use of "I".
+	 </tr>
+<form name="calculator" >
+<input type="button" value="1" onClick="document.calculator.ans.value+='1'">
+<input type="button" value="2" onClick="document.calculator.ans.value+='2'">
+<input type="button" value="3" onClick="document.calculator.ans.value+='3'">
+<input type="button" value="+" onClick="document.calculator.ans.value+='+'">
+
+<input type="button" value="4" onClick="document.calculator.ans.value+='4'">
+<input type="button" value="5" onClick="document.calculator.ans.value+='5'">
+<input type="button" value="6" onClick="document.calculator.ans.value+='6'">
+<input type="button" value="-" onClick="document.calculator.ans.value+='-'">
+
+<input type="button" value="7" onClick="document.calculator.ans.value+='7'">
+<input type="button" value="8" onClick="document.calculator.ans.value+='8'">
+<input type="button" value="9" onClick="document.calculator.ans.value+='9'">
+<input type="button" value="*" onClick="document.calculator.ans.value+='*'">
+<input type="button" value="/" onClick="document.calculator.ans.value+='/'">
+
+<input type="button" value="0" onClick="document.calculator.ans.value+='0'">
+<input type="reset" value="Reset">
+<input type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)">
+<br>Solution is <input type="textfield" name="ans" value="">
+</form>
+	</body>
+</html>
